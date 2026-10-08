@@ -1,0 +1,9 @@
+[project]
+name = "aeon-7080"
+version = "0.1.0"
+description = "AEON 7080 computational laboratory"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "apps/api"]
+testpaths = ["tests"]

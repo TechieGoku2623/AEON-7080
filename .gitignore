@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.pyc
+.DS_Store
+apps/web/node_modules/
+apps/web/.next/
+apps/web/tsconfig.tsbuildinfo
+storage/**
+!storage/.gitkeep
+!storage/videos/
+!storage/videos/.gitkeep
+!storage/datasets/
+!storage/datasets/.gitkeep
+*.db

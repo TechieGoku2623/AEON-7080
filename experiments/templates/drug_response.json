@@ -1,0 +1,40 @@
+{
+  "template_id": "drug-response",
+  "title": "Hypothetical drug response in a synthetic patient",
+  "mode": "patient",
+  "seed": 42,
+  "duration_h": 24,
+  "dt_h": 0.05,
+  "condition": "synthetic_diabetes",
+  "monte_carlo": {"n": 400, "cv": 0.2},
+  "pd": {
+    "kout_per_h": 0.45,
+    "k_insulin_per_h": 0.35,
+    "insulin_slope": 0.04,
+    "insulin_base_mu_l": 8
+  },
+  "interventions": {
+    "Treatment_A": {
+      "dose_mg": 400,
+      "ka_per_h": 0.7,
+      "cl_l_per_h": 5,
+      "v_l": 22,
+      "bioavailability": 1,
+      "emax": 0.3,
+      "ec50_mg_l": 10,
+      "hr_effect_bpm": 0,
+      "reference_weight_kg": 70
+    },
+    "Treatment_B": {
+      "dose_mg": 400,
+      "ka_per_h": 1.5,
+      "cl_l_per_h": 5,
+      "v_l": 22,
+      "bioavailability": 1,
+      "emax": 0.55,
+      "ec50_mg_l": 4,
+      "hr_effect_bpm": 5,
+      "reference_weight_kg": 70
+    }
+  }
+}

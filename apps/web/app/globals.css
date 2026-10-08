@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(126, 224, 208, 0.08), transparent 50%),
+    radial-gradient(900px 400px at 100% 0%, rgba(231, 194, 122, 0.06), transparent 45%),
+    #071018;
+  color: #e6eef2;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #234554 transparent;
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(rgba(126, 224, 208, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 224, 208, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.katex {
+  font-size: 1.05rem;
+  color: #e6eef2;
+}
